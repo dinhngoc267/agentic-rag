@@ -19,7 +19,7 @@ This report presents a Retrieval-Augmented Generation (RAG) chatbot pipeline bui
   - Extracted images are often split into fragments. I did try to use bounding boxes to reassemble full figures but were unsuccessful.  
 
 - **Workaround:**  
-  - I found that sending the entire page image (containing the fragmented figure) to a Vision-Language Model allows for accurate interpretation.  
+  - I found that sending the entire page image where the figure is located with the caption of that figure to a Vision-Language Model works well so far.  
   - The KB stores metadata for each figure, including label, caption, and page number.
 
 You can find the markdown data here: https://github.com/dinhngoc267/agentic-rag/blob/master/data/document_pages.json
