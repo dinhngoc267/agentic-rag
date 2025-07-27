@@ -98,3 +98,12 @@ This report presents a Retrieval-Augmented Generation (RAG) chatbot pipeline bui
   ```
 
 ---
+
+#### Video demo:
+
+With text-only answer generation:
+https://drive.google.com/file/d/1v2McpifMkOrsrHi38SVhR-dfPSelNAWv/view?usp=sharing
+
+With reqired figure query
+
+https://drive.google.com/file/d/15AtPWjhDhX3YknKQ0tBOxXXOvIkWHmFe/view?usp=sharing 
