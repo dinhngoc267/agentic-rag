@@ -22,6 +22,8 @@ This report presents a Retrieval-Augmented Generation (RAG) chatbot pipeline bui
   - I found that sending the entire page image (containing the fragmented figure) to a Vision-Language Model allows for accurate interpretation.  
   - The KB stores metadata for each figure, including label, caption, and page number.
 
+You can find the markdown data here: https://github.com/dinhngoc267/agentic-rag/blob/master/data/document_pages.json
+
 #### 1.2 Ontology Design
 
 - **Document Structure:**  
@@ -82,14 +84,15 @@ This report presents a Retrieval-Augmented Generation (RAG) chatbot pipeline bui
 ## III. RAGAS Evaluation
 
 - I used the [RAGAS](https://github.com/explodinggradients/ragas) framework to evaluate the chatbot.  
-- A test set of 21 questions was used to assess:
+- A test set of 21 questions  was used to assess:
   - Faithfulness
   - Answer relevancy
   - Context precision
   - Context recall
 
-- Evaluation script is provided in `evaluation.ipynb`.
 
+- Evaluation script is provided in `evaluation.ipynb`.
+- You can find the evaluation data (include response and retrieved context of the system) here: https://github.com/dinhngoc267/agentic-rag/blob/master/data/evaluation_data.csv
 - **Results:**
 
   ```
