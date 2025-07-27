@@ -64,8 +64,12 @@ This report presents a Retrieval-Augmented Generation (RAG) chatbot pipeline bui
 - This system uses **embedding-based retrieval** with a **fixed semantic query**, ensuring that the retrieved context nodes are at the Section level.
 - To support **multi-modal question answering**, I developed an **Agentic Multi-modal RAG** workflow. The architecture is illustrated below:
 
-  ![Agentic RAG Diagram](https://github.com/user-attachments/assets/9f1dba0b-aa60-40e0-81f4-5763ddfe22f1)
-
+![Agentic RAG Diagram](https://github.com/user-attachments/assets/9f1dba0b-aa60-40e0-81f4-5763ddfe22f1)
+- 
+- The VLM/LLM can return 3 type of object:
+  - `FinalAnswer` contains the final answer to user query
+  - `OutOfScope` contains a fixed message (“I'm not sure how to answer that based on the information I have.”) will be used when cannot answer the user query based on given context. 
+  - `RequireFigure` contains relevant figures which the query will be better resolved with. 
 ---
 
 ## II. Tone Adaptation and Student Engagement
