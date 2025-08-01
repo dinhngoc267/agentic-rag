@@ -157,7 +157,6 @@ async def query(query: str):
             )
         from openai import OpenAI
         client = OpenAI()
-        # Call the OpenAI API (uses gpt-4-vision-preview in this example)
         response = client.chat.completions.create(
             model="gpt-4.1",
             messages=messages,
